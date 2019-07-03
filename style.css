@@ -1,0 +1,928 @@
+/* ------------------------------
+         Body Settings
+--------------------------------*/
+
+html, body {
+    height: 100%; }
+
+body {
+  padding-top: 100px !important;
+}
+
+/* ------------------------------
+       Background Settings
+--------------------------------*/
+
+.bg-secondary {
+    background-color:  rgb(241, 241, 241) !important; }
+
+/* ------------------------------
+    Padding and Margin Settings
+--------------------------------*/
+.pt-7 {
+    padding-top: 9.5rem !important; }
+
+.mt-7 {
+    margin-top: 6.5rem !important; }
+.mx-7 {
+    margin-right: 20rem !important;
+    margin-left: 20rem !important; 
+    }
+
+li.nav-item {
+    padding-left:0rem;
+    }
+
+/* -----------------------------
+           Font Settings
+--------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+  
+h1 {
+font-family: "Muli", sans-serif;
+font-style:"Black";
+font-weight:800;
+color: rgba(47,67,148,1);
+}
+
+h2, .h2 {
+font-family: "Muli", sans-serif;
+font-style:"Semi-Bold";
+/* font-weight:540; */
+color: rgba(47,67,148,1);
+}
+
+h3 {
+font-family: Roboto, sans-serif;
+font-style: "Bold";
+color: rgba(76,79,86,1); 
+}
+
+a, h4 {
+font-family: Roboto, sans-serif;
+font-style: "Regular";
+color: rgba(76,79,86,1);
+}
+
+h1, .h1 {
+    font-size: 4.75rem; }
+  
+h2, .h2 {
+font-size: 2.25rem; }
+
+h3, .h3 {
+font-size: 1.55rem; }
+
+h4, .h4 {
+font-size: 1.5rem; }
+
+h5, .h5 {
+font-size: 1.25rem; }
+
+h6, .h6 {
+font-size: 1rem; }
+
+p, .p, li {
+font-family: Roboto, sans-serif;
+font-style: "Regular";
+color: rgba(76,79,86,1); 
+font-size: 1.2rem;
+}
+
+text {
+font-family: Roboto, sans-serif;
+font-style: "Regular";
+color: rgba(76,79,86,1); 
+font-size: 0.75rem;
+}
+
+p {
+margin-top: 0;
+margin-bottom: 1rem; }
+
+.p-l {
+text-align:left;
+}
+
+/* ------------------------------
+    Container and Row Settings
+--------------------------------*/
+
+.container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto; }
+    @media (min-width: 36em) {
+      .container {
+        max-width: 33.75em; } }
+    @media (min-width: 48em) {
+      .container {
+        max-width: 45em; } }
+    @media (min-width: 62em) {
+      .container {
+        max-width: 60em; } }
+    @media (min-width: 75em) {
+      .container {
+        max-width: 71.25em; } }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+
+.cover {
+    min-height: 100%; }
+
+/* ------------------------------
+          Quote Settings
+--------------------------------*/
+.bg-quote {
+    background-image: url('Dots_A0_Rectangle_12_pattern@2x.png');
+    max-width:100%;
+    background-position: center; 
+    background-repeat: no-repeat repeat;
+    background-size: cover;
+    height:28%;
+    display:table; 
+  }
+
+blockquote {
+    margin: 0 0 1rem;
+    font-family: "Muli", sans-serif;
+    font-style:"Semi-Bold";
+    font-size: 1.75rem;
+    font-weight:548;
+    color: rgba(47,67,148,1);
+   }
+
+/* ------------------------------
+        Shadow Settings
+--------------------------------*/
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); }
+
+.card_box-shadow, .msg_box-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(47, 67, 148, 0.1);
+}
+
+/* ------------------------------
+          Icon Settings
+--------------------------------*/
+
+.text-primary {
+    color: rgba(47,67,148,1) !important; }
+  
+  a.text-primary:hover {
+    color: rgba(47,67,148,0.8) !important; }
+  a.text-primary:focus {
+    color: rgba(47,67,148,0.6) !important; }
+
+.msg_box-shadow:hover,
+.msg_box-shadow:focus {
+  box-shadow: 0 0.5rem 1rem rgba(47, 67, 148, 0.4);
+}
+.msg_box-shadow.active {
+  box-shadow: 0 0.5rem 1rem rgba(47, 67, 148, 0.6);
+}
+
+ul.p-l {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+li {
+  position: relative;
+  padding-left: 3em; 
+}
+
+.check:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+}
+
+
+/* ------------------------------
+          Button Settings
+--------------------------------*/
+
+.log_btn { 
+  width:90px; 
+  height:60px;
+}
+
+.send_btn { 
+  width:150px; 
+  height:60px;
+  cursor: pointer;
+}
+
+#log_btn {
+  opacity: 1;
+	filter: drop-shadow(0px 5px 10px rgba(47, 67, 148, 0.302));
+  fill: rgba(47,67,148,1);} 
+  #log_btn:hover {
+  fill: rgba(47,67,148,0.8);
+  }
+
+.log_btn_b {
+  width:80px; 
+  height:40px;
+}
+
+.request_btn {
+  overflow: visible;
+  position: relative;
+  margin-top: 30%;
+  width: 20%;
+}
+
+#request_btn {
+  opacity: 1;
+  fill: rgba(255,255,255,1);
+  stroke: rgb(47, 67, 148);
+  stroke-width: 5px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;}
+  #request_btn:hover {
+  fill: rgba(47,67,148,0.2);
+  }
+  
+#request_text {
+    position:relative;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    color: rgba(47,67,148,1);
+    }
+
+.nav_btn { 
+    width:80px; 
+    height:60px;
+    }
+
+#nav_btn {
+    opacity: 1;
+        filter: drop-shadow(0px 5px 10px rgba(47, 67, 148, 0.302));
+    fill: rgb(253, 253, 253);} 
+    #nav_btn:hover {
+    fill: rgba(47,67,148,0.2);
+    }
+
+#txt_btn {
+  opacity: 1;
+  filter: drop-shadow(0px 5px 10px rgba(47, 67, 148, 0.302));
+  z-index: -15;
+}
+
+  /* fill: rgb(253, 253, 253);}  */
+  #txt_btn:hover {
+  fill: rgba(47,67,148,1);
+  }
+
+.privacy_btn { 
+    width:200px; 
+    height:90px;
+    }
+
+#privacy_btn {
+    opacity: 1;
+    filter: drop-shadow(0px 5px 10px rgba(47, 67, 148, 0.302));
+    fill: rgb(241, 241, 241);} 
+    #privacy_btn:hover {
+    fill: rgba(47,67,148,0.2);
+    }
+
+.privacy {
+    text-decoration: underline;
+    }
+    .privacy:focus,
+    .privacy:hover {
+    background: rgba(47,67,148,0.6);
+    }
+  
+.sub_btn {
+    border-radius: 24px;
+    background-color:white;
+    border: 3px solid rgba(47,67,148,1);
+    font-family: "Muli", sans-serif;
+    font-style:"Semi-Bold";
+    font-weight:200;
+    color: rgba(47,67,148,1);
+    }
+    @media (min-width: 0em) {
+    .sub_btn {
+        font-size: 1rem;
+        width: 40%;
+    }}  
+    @media (min-width: 36em) {
+    .sub_btn {
+        font-size: 1rem;
+        width: 30%;}}
+    @media (min-width: 48em) {
+    .sub_btn {
+        font-size: 1.15rem;
+        width: 30%;}}
+    @media (min-width: 62em) {
+    .sub_btn {
+        font-size: 1.25rem;
+        width: 30%;}}
+    @media (min-width: 75em) {
+    .sub_btn {
+        font-size: 1.5rem;
+        width: 30%;
+    }}
+  
+#sub_form {
+    width:70%;
+    border-radius: 24px;
+  }
+  @media (min-width: 0em) {
+    #sub_form {
+      width: 100%;}} 
+  
+  .sub_form {
+    border-radius:24px;
+    width:80%;
+  }
+  
+.input-form{
+    float: left;
+    border: 0.5px solid #a9a9a9;
+    border-radius:24px;
+    }
+  @media (min-width: 0em) {
+    .input-form {
+      font-size: 1rem;
+      width: 100%;}}  
+  @media (min-width: 36em) {
+    .input-form {
+      font-size: 1rem;
+      width: 80%;}}
+  @media (min-width: 48em) {
+    .input-form {
+      font-size: 1.15rem;
+      width: 80%;}}
+  @media (min-width: 62em) {
+    .input-form {
+      font-size: 1.25rem;
+      width: 70%;}}
+  @media (min-width: 75em) {
+    .input-form {
+      font-size: 1.5rem;
+      width: 60%;
+    }}
+  
+  .input-form input:focus, .input-form input:active {
+    outline: none;
+  }
+  .input-form input {
+    width: 70%;
+    float: left;
+    border: none;
+  }
+  
+  .input-form button {
+    float: right;
+  }
+
+  @media (min-width: 0em) {
+    .navbar-nav > li {
+      align-self: center;
+    }}  
+  @media (min-width: 36em) {
+    .navbar-nav > li {
+      align-self: center;
+    }}
+
+/* ------------------------------
+      Homepage Line Settings
+--------------------------------*/
+
+#Linie_1 {
+    opacity: 1;
+    fill: transparent;
+    stroke: rgb(47, 67, 148);
+    stroke-width: 0.25rem;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+    }
+
+.line {
+    overflow: visible;
+    width: 1.75rem;
+    height: 0.5rem;
+    }
+
+    .right-side-button{
+        float:right;
+      }
+
+
+/* ------------------------------
+  Middle Card Responsive Setting
+--------------------------------*/
+
+@media (min-width: 62.3125em) {
+.middle_card {
+  transform: translateY(-1.25rem);
+}}
+
+
+/* ------------------------------
+      Homepage Image Settings
+--------------------------------*/
+
+.overlay-text {
+  float:right;
+  overflow:hidden;
+}
+@media (min-width: 0em) {
+  .overlay-text {
+    width:100%; /*important*/
+    bottom:59vw; /*important*/
+    left:40vw;}
+  .img-offset-2 {
+    width:90%;
+    bottom:10vw; /*important*/
+    overflow:hidden;
+    left:-15vw;}
+  .img-offset {
+    width:100%;
+    float:right;
+    bottom:4vw; /*important*/
+    overflow:hidden;
+    left:3vw;
+  }
+  .title_1 {
+    margin-left: 5%;}
+  .title_font {
+    font-size: 2.625rem;
+}}
+
+@media (min-width: 28.125em) {
+  .overlay-text {
+    width:100%; /*important*/
+    bottom:45vw; /*important*/
+    left:40vw;}
+  .img-offset {
+    width:90%;
+    float:right;
+    bottom:11vw; /*important*/
+    overflow:hidden;}
+  .img-offset-2 {
+    width:90%;
+    bottom:20vw; /*important*/
+    overflow:hidden;
+    left:-20vw;}
+  .title_1 {
+    margin-left: 5%;}
+  .title_font {
+    font-size: 3rem;
+}}
+  
+@media (min-width: 36em) {
+  .overlay-text {
+    width:100%; /*important*/
+    bottom:45vw; /*important*/
+    left:40vw;}
+  .img-offset {
+    width:90%;
+    float:right;
+    bottom:11vw; /*important*/
+    overflow:hidden;}
+  .img-offset-2 {
+    width:90%;
+    bottom:20vw; /*important*/
+    overflow:hidden;
+    left:-20vw;}
+  .title_font {
+    font-size: 3rem;
+}}
+
+@media (min-width: 48em) {
+  .overlay-text {
+    width:90%; /*important*/
+    bottom:37vw; /*important*/
+    left:38vw;}
+  .img-offset {
+    width:70%;
+    float:right;
+    bottom:11vw; /*important*/
+    left:-15vw;
+    overflow:hidden;}
+  .img-offset-2 {
+    width:80%;
+    bottom:10vw; /*important*/
+    overflow:hidden;
+    left:-10vw;}
+  .title_font {
+    font-size: 3.5rem;
+}}
+
+@media (min-width: 62em) {
+  .overlay-text {
+    width:70%; /*important*/
+    bottom:35vw; /*important*/
+    left:20vw;
+    overflow:hidden;}
+  .img-offset {
+    width:70%;
+    float:right;
+    bottom:7vw; /*important*/
+    left:-5vw; 
+    overflow:hidden;}
+  .img-offset-2 {
+    width:100%;
+    bottom:8vw; /*important */
+    overflow:hidden;
+    left:-9vw; }
+  .title_font {
+    font-size: 4.5rem;
+  }}
+
+@media (min-width: 75em) {
+  .overlay-text {
+  width:70%; /*important*/
+  bottom:23vw; /*important*/
+  left:13vw;
+  overflow: hidden;}
+  .img-offset {
+    position:relative;
+    width:80%;
+    float:right;
+    bottom:7vw; /*important*/
+    left:-3vw;
+    overflow:hidden;}
+  .img-offset-2 {
+    position:relative;
+    width:90%;
+    bottom:9vw; /*important*/
+    overflow:hidden;
+    left:-9vw;}
+  .title_1 {
+    margin-left: -1%;}
+  .title_font {
+    font-size: 5rem;
+    font-weight:800;
+  }}
+
+.behind {
+  z-index:-40;
+}
+
+.pic-w {
+  z-index:10;
+}
+
+.pic-m {
+  z-index:15;
+}
+
+
+/* ------------------------------
+         Footer Settings
+--------------------------------*/
+
+.p-justify, .c-justify {
+  justify-content: center;
+}
+
+
+/* -------------------------------
+        Navbar Settings
+------------------------------- */
+
+.offset:before { 
+  display: block; 
+  content: " "; 
+    height: 250px;      /* Give height of your fixed element */
+         margin-top: -150px; /* Give negative margin of your fixed element */   
+         visibility: hidden; 
+ }
+
+ .offset-quote:before { 
+  content: " "; 
+    height: 250px;      /* Give height of your fixed element */
+         margin-top: -150px; /* Give negative margin of your fixed element */   
+         visibility: hidden; 
+ }
+
+/* 1 Navbar Setting */
+
+.header.navbar {
+	display: block;
+	padding: 0;
+    border-bottom: none;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.header.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+.header.navbar .navbar-nav > li > a {
+    font-size: 12px;
+    line-height: 20px;
+    color: #2d353c;
+    font-weight: 600;
+}
+
+.navbar-header{
+    width:100%;
+  }
+
+.header.navbar .navbar-nav > li.active > a,
+.header.navbar .navbar-nav > li > a.active,
+.header.navbar .navbar-nav > li > a:hover,
+.header.navbar .navbar-nav > li > a:focus {
+    background: none;
+}
+.header.navbar-fixed-bottom, 
+.header.navbar-fixed-top {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+.header.navbar-fixed-top {
+	top: 0;
+}
+.header.navbar-fixed-bottom {
+	bottom: 0;
+}
+.header .navbar-nav {
+	margin: 7.5px -15px;
+}
+.header .nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+.header .container-fluid > .navbar-collapse, 
+.header .container-fluid > .navbar-header, 
+.header .container > .navbar-collapse, 
+.header .container > .navbar-header {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.header .navbar-collapse {
+	padding-right: 15px;
+	padding-left: 15px;
+	overflow-x: visible;
+	-webkit-overflow-scrolling: touch;
+	border-top: 1px solid transparent;
+}
+.header .navbar-fixed-bottom .navbar-collapse, 
+.header .navbar-fixed-top .navbar-collapse {
+	max-height: 340px;
+}
+
+
+/* 2 Navbar Brand Logo & Text Setting */
+
+
+.header .navbar-header:before,
+.header .navbar-header:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.header .navbar-brand {
+    padding: 25px 15px;
+    height: auto;
+			float: left;
+}.header .navbar-brand img {
+	display: block;
+	margin: -10px 0;
+	max-height: 40px;
+}
+.brand-logo {
+    float: left;
+    border: 15px solid;
+    border-color: #4DCACA #31A3A3 #1D8888;
+    margin-right: 10px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.brand-logo + .brand-text {
+    margin-left: 42px;
+    display: block;
+    color: #2d353c;
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+}
+
+
+/* 3 Navbar Mobile Toggle */
+
+.header .navbar-toggle {
+	position: relative;
+	float: right;
+	padding: 9px 10px;
+	margin-right: 15px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+	background-color: transparent;
+	background-image: none;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 4px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.header .navbar-toggle:focus,
+.header .navbar-toggle:active {
+	outline: none;
+}
+.header .navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 4px;
+}
+.header .navbar-toggle .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+}
+.header.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.header.navbar-default .navbar-collapse, 
+.header.navbar-default .navbar-form {
+    border-color: #e7e7e7;
+} 
+
+
+/* 4 Navbar Default Setting  */
+
+.header.navbar.navbar-default {
+    background: #fff;
+}
+
+
+/* 5 Navbar Transparent & Inverse Setting  */
+
+.header.navbar.navbar-transparent {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.header.navbar.navbar-transparent .navbar-nav > li > a,
+.header.navbar.navbar-inverse .navbar-nav > li > a {
+    color: #8F8E8E;
+}
+.header.navbar.navbar-transparent .brand-text,
+.header.navbar.navbar-inverse .brand-text {
+    color: #fff;
+}
+.navbar-transparent .navbar-toggle,
+.navbar-inverse .navbar-toggle {
+    border-color: #8F8E8E;
+}
+.navbar-transparent .navbar-toggle .icon-bar,
+.navbar-inverse .navbar-toggle .icon-bar {
+    background: #8f8e8e;
+} 
+
+
+/* 6 Navbar Small Setting */
+
+.header.navbar.navbar-small {
+    border-bottom: none;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.header.navbar.navbar-small .navbar-brand,
+.header.navbar.navbar-small .navbar-nav > li > a {
+    padding: 15px;
+}
+.header.navbar.navbar-transparent.navbar-small {
+    background: #fff;
+}
+.header.navbar.navbar-transparent.navbar-small .navbar-nav > li > a,
+.header.navbar.navbar-transparent.navbar-small .brand-logo + .brand-text {
+    color: #2d353c;
+}
+.navbar-small .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.navbar-small .navbar-toggle .icon-bar {
+    background: #888;
+}
+
+
+/* 7 Navbar Dropdown */
+
+.navbar-nav > li.dropdown:hover > .dropdown-menu,
+.navbar-nav > li.dropdown:focus > .dropdown-menu {
+    display: block;
+}
+.navbar-nav .dropdown-menu {
+    background: #333;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-size: 12px;
+    padding: 0;
+    margin-top: 0;
+    border: none;
+	position: absolute;
+}
+.navbar-nav .dropdown-menu.dropdown-menu-left {
+	left: 0;
+}
+.navbar-nav .dropdown-menu > li > a,
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #999;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+.navbar-nav .dropdown-menu > li.active > a,
+.navbar-nav .dropdown-menu > li > a:hover,
+.navbar-nav .dropdown-menu > li > a:focus,
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar-nav .dropdown-menu .dropdown-item.active {
+    background: #222;
+    color: #00acac;
+}
+.navbar-nav .dropdown-menu > li + li,
+.navbar-nav .dropdown-menu .dropdown-item + .dropdown-item {
+    border-top: 1px solid #444;
+} 
+
+
+/* -------------------------------
+        Testimonial Settings
+------------------------------- */
+
+.testimonials {
+  padding-bottom: 50px;
+}
+.testimonials .item {
+  padding-top: 15px;
+}
+.testimonials .carousel-indicators {
+  bottom: 0;
+}
+.testimonials blockquote {
+  border: none;
+  text-align: center;
+  position: relative;
+}
+
+.testimonials .carousel-indicators li {
+  background: rgba(76,79,86,0.6);
+  border: none;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.testimonials .carousel-indicators li:hover,
+.testimonials .carousel-indicators li:focus {
+  background: rgba(47,67,148,0.6);
+}
+.testimonials .carousel-indicators li.active {
+  background: rgba(47,67,148,1);
+}
+.carousel-indicators li,
+.carousel-indicators li.active {
+  width: 12px;
+  height: 12px;
+  margin: 5px 3px;
+  border-radius: 12px;
+}
+
+/* -------------------------------
+        Testimonial Settings
+------------------------------- */
+
+.delay-threeq {
+  animation-delay: 0.75s;
+}
+
+.delay-half {
+  animation-delay: 0.5s;
+}

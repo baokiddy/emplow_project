@@ -1,0 +1,337 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--web-view-ids: Modal;
+}
+#Modal * {
+	margin: 0;
+	padding: 0;
+}
+#Modal {
+	position: absolute;
+	box-sizing: border-box;
+	background: #E5E5E5;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(255,255,255,0.6);
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	opacity: 1;
+	--web-view-name: Modal;
+	--web-view-id: Modal;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Rechteck_22 {
+	opacity: 1;
+	filter: drop-shadow(0px 5px 20px rgba(47, 67, 148, 0.149));
+	fill: rgba(255,255,255,1);
+}
+.Rechteck_22 {
+	position: absolute;
+	overflow: visible;
+	width: 1334px;
+	height: 765px;
+	left: 323px;
+	top: 188px;
+}
+#Gruppe_maskieren_4 {
+	opacity: 1;
+	position: absolute;
+	width: 865px;
+	height: 615px;
+	left: 729px;
+	top: 258px;
+	overflow: visible;
+}
+#x001___E0A9 {
+	opacity: 1;
+	position: absolute;
+	left: 1531px;
+	top: 209.5px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	width: 33px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Ikono Mini L 5;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(47,67,148,1);
+}
+#Understanding_Emplow_as_a_Host {
+	opacity: 1;
+	position: absolute;
+	left: 361px;
+	top: 240px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 454px;
+	height: 100px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	color: rgba(76,79,86,1);
+}
+#MBTI_Personality_Legend {
+	opacity: 1;
+	position: absolute;
+	left: 361px;
+	top: 638px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 408px;
+	height: 48px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(89,98,116,1);
+}
+#Emplow_poses_interesting_visua {
+	opacity: 1;
+	position: absolute;
+	left: 361px;
+	top: 340px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 438px;
+	height: 208px;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(89,98,116,1);
+}
+#Ellipse_1308 {
+	opacity: 1;
+	fill: rgba(255,255,255,1);
+	stroke: rgb(1, 160, 49);
+	stroke-width: 10px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_1308 {
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	height: 42px;
+	left: 361px;
+	top: 698px;
+}
+#Ellipse_1309 {
+	opacity: 1;
+	fill: rgba(255,255,255,1);
+	stroke: rgb(47, 66, 148);
+	stroke-width: 10px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_1309 {
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	height: 42px;
+	left: 361px;
+	top: 752px;
+}
+#Ellipse_1310 {
+	opacity: 1;
+	fill: rgba(255,255,255,1);
+	stroke: rgb(165, 0, 0);
+	stroke-width: 10px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_1310 {
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	height: 42px;
+	left: 361px;
+	top: 806px;
+}
+#Ellipse_1312 {
+	opacity: 1;
+	fill: rgba(255,255,255,1);
+	stroke: rgb(206, 1, 255);
+	stroke-width: 10px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_1312 {
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	height: 42px;
+	left: 546px;
+	top: 698px;
+}
+#Ellipse_1313 {
+	opacity: 1;
+	fill: rgba(255,255,255,1);
+	stroke: rgb(255, 137, 1);
+	stroke-width: 10px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_1313 {
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	height: 42px;
+	left: 546px;
+	top: 752px;
+}
+#Ellipse_1314 {
+	opacity: 1;
+	fill: rgba(255,255,255,1);
+	stroke: rgb(255, 216, 0);
+	stroke-width: 10px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_1314 {
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	height: 42px;
+	left: 546px;
+	top: 806px;
+}
+#ENTJ {
+	opacity: 1;
+	position: absolute;
+	left: 423px;
+	top: 703px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	width: 70px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(89,98,116,1);
+}
+#ENTP {
+	opacity: 1;
+	position: absolute;
+	left: 423px;
+	top: 757px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	width: 76px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(89,98,116,1);
+}
+#ENFJ {
+	opacity: 1;
+	position: absolute;
+	left: 423px;
+	top: 811px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	width: 69px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(89,98,116,1);
+}
+#ESTJ {
+	opacity: 1;
+	position: absolute;
+	left: 608px;
+	top: 703px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	width: 67px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(89,98,116,1);
+}
+#ENFP {
+	opacity: 1;
+	position: absolute;
+	left: 608px;
+	top: 757px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	width: 75px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(89,98,116,1);
+}
+#INTP {
+	opacity: 1;
+	position: absolute;
+	left: 608px;
+	top: 811px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	width: 67px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(89,98,116,1);
+}
