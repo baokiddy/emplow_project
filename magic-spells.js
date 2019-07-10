@@ -442,7 +442,7 @@ $(window).load(function() {
     var serviceTextScene = new ScrollMagic.Scene({
         triggerElement: '#services',
         duration: 800,
-        offset: -30
+        offset: -150
     })
     .setTween(serviceTextTween)
     .addIndicators()
@@ -479,7 +479,7 @@ $(window).load(function() {
     var teamTextScene = new ScrollMagic.Scene({
         triggerElement: '#team',
         duration: 500,
-        offset: -100
+        offset: -150
     })
     .setTween(teamTextTween)
     .addIndicators()
@@ -498,34 +498,57 @@ $(window).load(function() {
     var contactTextScene = new ScrollMagic.Scene({
         triggerElement: '#contact',
         duration: 500,
-        offset: -50
+        offset: -150
     })
     .setTween(contactTextTween)
     .addIndicators()
     .addTo(controller);
 
+    // build tween
+	var rightTween = TweenMax.fromTo("#contact-box-r", 2, {left: 100}, {left: 0}, 0.15);
 
-    var optimizerScene1 = new ScrollMagic.Scene({
+    var contactTeamScene = new ScrollMagic.Scene({
         triggerElement: '#contact',
-        duration: 600,
-        offset:-20
+        duration: 500,
+        offset: -20
     })
-    .on('leave', function(e) {
-        $('#contact-box-l').removeClass('animated fadeInLeft slower')
-        $('#contact-box-r').removeClass('animated fadeInRight slower');
-    })
-    .on('start', function(e) {
-        $('#contact-box-l').addClass('animated fadeInLeft slower')
-        $('contact-box-r').addClass('animated fadeInRight slower');
-    })
-    .on('leave', function(e) {
-        $('#contact-box-r').removeClass('animated fadeInRight slower');
-    })
-    .on('start', function(e) {
-        $('#contact-box-r').addClass('animated fadeInRight slower');
-    })
+    .setTween(rightTween)
     .addIndicators()
     .addTo(controller);
+
+    // build tween
+	var leftTween = TweenMax.fromTo("#contact-box-l", 2, {right: 100}, {right: 0}, 0.15);
+
+    var contactTeamScene = new ScrollMagic.Scene({
+        triggerElement: '#contact',
+        duration: 500,
+        offset: -20
+    })
+    .setTween(leftTween)
+    .addIndicators()
+    .addTo(controller);
+
+    // var optimizerScene1 = new ScrollMagic.Scene({
+    //     triggerElement: '#contact',
+    //     duration: 600,
+    //     offset:-20
+    // })
+    // .on('leave', function(e) {
+    //     $('#contact-box-l').removeClass('animated fadeInLeft')
+    //     $('#contact-box-r').removeClass('animated fadeInRight');
+    // })
+    // .on('start', function(e) {
+    //     $('#contact-box-l').addClass('animated fadeInLeft')
+    //     $('contact-box-r').addClass('animated fadeInRight');
+    // })
+    // .on('leave', function(e) {
+    //     $('#contact-box-r').removeClass('animated fadeInRight');
+    // })
+    // .on('start', function(e) {
+    //     $('#contact-box-r').addClass('animated fadeInRight');
+    // })
+    // .addIndicators()
+    // .addTo(controller);
 
 
 

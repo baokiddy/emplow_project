@@ -14,7 +14,7 @@ body {
 --------------------------------*/
 
 .bg-secondary {
-    background-color:  rgb(241, 241, 241) !important; }
+    background-color:  rgb(47,67,148,0.03) !important; }
 
 /* ------------------------------
     Padding and Margin Settings
@@ -28,6 +28,10 @@ body {
     margin-right: 20rem !important;
     margin-left: 20rem !important; 
     }
+.my-7 {
+  margin-top: 8rem !important;
+  margin-bottom: 10rem !important; 
+  }
 
 li.nav-item {
     padding-left:0rem;
@@ -89,7 +93,7 @@ p, .p, li {
 font-family: Roboto, sans-serif;
 font-style: "Regular";
 color: rgba(76,79,86,1); 
-font-size: 1.2rem;
+font-size: 1.1rem;
 }
 
 text {
@@ -299,10 +303,10 @@ li {
 
 #privacy_btn {
     opacity: 1;
-    filter: drop-shadow(0px 5px 10px rgba(47, 67, 148, 0.302));
-    fill: rgb(241, 241, 241);} 
+    /* filter: drop-shadow(0px 5px 10px rgba(47, 67, 148, 0.302)); */
+    fill: rgba(47,67,148,0.01);} 
     #privacy_btn:hover {
-    fill: rgba(47,67,148,0.2);
+    fill: rgba(47,67,148,0.4);
     }
 
 .privacy {
@@ -325,24 +329,24 @@ li {
     @media (min-width: 0em) {
     .sub_btn {
         font-size: 1rem;
-        width: 40%;
+        width: 58%;
     }}  
     @media (min-width: 36em) {
     .sub_btn {
         font-size: 1rem;
-        width: 30%;}}
+        width: 48%;}}
     @media (min-width: 48em) {
     .sub_btn {
         font-size: 1.15rem;
-        width: 30%;}}
+        width: 48%;}}
     @media (min-width: 62em) {
     .sub_btn {
         font-size: 1.25rem;
-        width: 30%;}}
+        width: 48%;}}
     @media (min-width: 75em) {
     .sub_btn {
         font-size: 1.5rem;
-        width: 30%;
+        width: 48%;
     }}
   
 #sub_form {
@@ -386,7 +390,7 @@ li {
     }}
   
   .input-form input:focus, .input-form input:active {
-    outline: none;
+    outline: rgba(47,67,148,1);
   }
   .input-form input {
     width: 70%;
@@ -396,6 +400,12 @@ li {
   
   .input-form button {
     float: right;
+  }
+
+  .form-control:focus, .form-control:active {
+    border-color: rgba(47,67,148,0.4);
+    box-shadow: 0 0 0 0.2rem rgba(47,67,148,0.4);
+
   }
 
   @media (min-width: 0em) {
@@ -442,6 +452,9 @@ li {
   transform: translateY(-1.25rem);
 }}
 
+.card {
+  outline: none;
+}
 
 /* ------------------------------
       Homepage Image Settings
@@ -454,7 +467,7 @@ li {
 @media (min-width: 0em) {
   .overlay-text {
     width:100%; /*important*/
-    bottom:59vw; /*important*/
+    bottom:111vw; /*important*/
     left:40vw;}
   .img-offset-2 {
     width:90%;
@@ -477,7 +490,7 @@ li {
 @media (min-width: 28.125em) {
   .overlay-text {
     width:100%; /*important*/
-    bottom:45vw; /*important*/
+    bottom:87vw; /*important*/
     left:40vw;}
   .img-offset {
     width:90%;
@@ -486,9 +499,9 @@ li {
     overflow:hidden;}
   .img-offset-2 {
     width:90%;
-    bottom:20vw; /*important*/
+    bottom:21vw; /*important*/
     overflow:hidden;
-    left:-20vw;}
+    left:-18vw;}
   .title_1 {
     margin-left: 5%;}
   .title_font {
@@ -507,9 +520,9 @@ li {
     overflow:hidden;}
   .img-offset-2 {
     width:90%;
-    bottom:20vw; /*important*/
+    bottom:10vw; /*important*/
     overflow:hidden;
-    left:-20vw;}
+    left:-13vw;}
   .title_font {
     font-size: 3rem;
 }}
@@ -537,7 +550,7 @@ li {
 @media (min-width: 62em) {
   .overlay-text {
     width:70%; /*important*/
-    bottom:35vw; /*important*/
+    bottom:42vw; /*important*/
     left:20vw;
     overflow:hidden;}
   .img-offset {
@@ -558,8 +571,8 @@ li {
 @media (min-width: 75em) {
   .overlay-text {
   width:70%; /*important*/
-  bottom:23vw; /*important*/
-  left:13vw;
+  bottom:25vw; /*important*/
+  left:15vw;
   overflow: hidden;}
   .img-offset {
     position:relative;
@@ -610,7 +623,7 @@ li {
 .offset:before { 
   display: block; 
   content: " "; 
-    height: 250px;      /* Give height of your fixed element */
+    height: 200px;      /* Give height of your fixed element */
          margin-top: -150px; /* Give negative margin of your fixed element */   
          visibility: hidden; 
  }
