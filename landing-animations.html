@@ -139,12 +139,14 @@
     </div>
   <!-- Homepage end -->
    <!-- Intriduction page start -->
-   <div class=" bg-secondary py-2 mb-1 offset" id="services" data-anchor="services" data-scrollview="true">
+   <div class=" bg-secondary py-2 mb-1 offset" id="about" data-anchor="about" data-scrollview="true">
       <div class="container my-7" >
           <div class="row justify-content-left my-7">
               <div class="col-lg-4 col-md-4 col-10 p-2">
                 <h2><b>Emplow -</b></h2>
-                <h2 >A Revolutionary <br>
+                <h2 ><a href="" class="typewrite h2" data-period="2000" data-type='[ "A Revolutionary", "An Innovative", " A Modern" ]'>
+                    <span class="wrap"></span>
+                </a> <br>
                     Hiring Experience</h2>
               </div>
               <div class="col-lg-8 col-md-8 col-10 mb-4">
@@ -170,7 +172,7 @@
           <div class="col-lg-6 p-1 col-md-6 col-sm-11 col-10">
             <div class=" d-flex h-100">
                 <div class="pt-4 col-3 align-items-center"> 
-                    <img class="img-fluid d-block mb-3 mx-auto animated bounceIn delay-3s" src=" Rechteck_54_A0_Rectangle_32_pattern.png" width="100%">
+                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto" src=" Rechteck_54_A0_Rectangle_32_pattern.png" width="100%">
                 </div>
               <div class="card-body col-9 text-align-left"> 
                 <h3><b>Select Your Top Candidates</b></h3>
@@ -186,7 +188,7 @@
           <div class="col-lg-6 p-1 col-md-6 col-sm-11 col-10">
             <div class="d-flex h-100">
                 <div class="pt-4 col-3 align-items-center"> 
-                    <img class="img-fluid d-block mb-3 mx-auto animated bounceIn delay-3s" src="Rechteck_53_A0_Rectangle_29_pattern.png" width="100%">
+                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto" src="Rechteck_53_A0_Rectangle_29_pattern.png" width="100%">
                 </div>
               <div class="card-body col-9 text-align-left"> 
                 <h3><b>Know Your Candidate</b></h3>
@@ -202,7 +204,7 @@
           <div class="col-lg-6 p-1 col-md-6 col-sm-11 col-10">
             <div class="d-flex h-100">
                 <div class="pt-4 col-3 align-items-center"> 
-                    <img class="img-fluid d-block mb-3 mx-auto animated bounceIn delay-3s" src="Rechteck_55_A0_Rectangle_35_pattern.png" width="100%">
+                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto" src="Rechteck_55_A0_Rectangle_35_pattern.png" width="100%">
                 </div>
               <div class="card-body col-9 text-align-left"> 
                 <h3><b>Save time because time is money</b></h3>
@@ -219,7 +221,7 @@
           <div class="col-lg-6 p-1 col-md-6 col-sm-11 col-10">
             <div class="d-flex h-100">
                 <div class="pt-4 col-3 align-items-center"> 
-                    <img class="img-fluid d-block mb-3 mx-auto animated bounceIn delay-3s" src="Rechteck_53_A0_Rectangle_29_pattern.png" width="100%">
+                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto" src="Rechteck_53_A0_Rectangle_29_pattern.png" width="100%">
                 </div>
               <div class="card-body col-9 text-align-left"> 
                 <h3><b>Powered by AI</b></h3>
@@ -275,23 +277,23 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-12 p-3 p-l" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
-            <h3 class="animated fadeInLeft slow">If you have inquiries or would <br>
+          <div class="col-md-6 col-12 p-3 p-l" id="contact-box-l" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+            <h3 >If you have inquiries or would <br>
               like to stay in touch, please <br>
               join our mailing list. </h3>
-            <p class="my-0 py-0 animated fadeInLeft slow"> No spam, we promise.</p>
-            <h4 class="lead mt-3 animated fadeInLeft slow"> <strong>Emplow, Inc</strong> </h4>
-            <p class="animated fadeInLeft slow"> 795 Folsom Ave, Suite 600  <br>
+            <p class="my-0 py-0"> No spam, we promise.</p>
+            <h4 class="lead mt-3"> <strong>Emplow, Inc</strong> </h4>
+            <p > 795 Folsom Ave, Suite 600  <br>
               San Francisco, CA 94107  </p>
-            <p class="animated fadeInLeft slow"> <a href="#">+1 760 917 1744 </a> <br>
+            <p > <a href="#">+1 760 917 1744 </a> <br>
             <a href="mailto:info@emplow.org">info@emplow.org</a> </p>
           </div>
-          <div class="col-md-6 p-3">
+          <div class="col-md-6 p-3" id="contact-box-r">
             <form action="/email-button" method="POST" id="submittingForm">
-              <div class="form-group msg_box-shadow animated fadeInRight slow"> <input type="text" class="form-control" id="form38" placeholder="Name*"> </div>
-              <div class="form-group msg_box-shadow animated fadeInRight slow"> <input type="email" class="form-control" id="form39" placeholder="Email*"> </div>
-              <div class="form-group msg_box-shadow animated fadeInRight slow"> <textarea class="form-control" id="form43" rows="3" placeholder="Your message"></textarea> </div> 
-              <svg class="send_btn animated fadeInRight slow" onclick="submitForm();">
+              <div class="form-group msg_box-shadow "> <input type="text" class="form-control" id="form38" placeholder="Name*"> </div>
+              <div class="form-group msg_box-shadow"> <input type="email" class="form-control" id="form39" placeholder="Email*"> </div>
+              <div class="form-group msg_box-shadow animated"> <textarea class="form-control" id="form43" rows="3" placeholder="Your message"></textarea> </div> 
+              <svg class="send_btn" onclick="submitForm();">
                 <g>
                   <rect id="log_btn" rx="20" ry="28" x="0" y="10" width="150" height="40"></rect>
                   <text x="17" y="35" fill = "#fdfbfb" class="p">Send Message</text>
@@ -334,6 +336,18 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="smooth-scroll.js"></script>
     <script type="text/javascript" src="animation.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
+    <!-- <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.velocity.js"></script> -->
+    <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/jquery.ScrollMagic.min.js"></script>
+    <!-- <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script> -->
+    
+    
+    <script data-cfasync="false" src="magic-spells.js"></script>
     <script type="text/javascript" src="app.min.js"></script>
 </body>
 
