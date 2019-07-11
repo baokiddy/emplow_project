@@ -426,7 +426,7 @@ $(window).load(function() {
         offset: -150
     })
     .setTween(aboutTextTween)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
 
@@ -445,7 +445,7 @@ $(window).load(function() {
         offset: -150
     })
     .setTween(serviceTextTween)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
     // // Build service img tween
@@ -464,7 +464,7 @@ $(window).load(function() {
     //     $('img').addClass('animated bounceIn');
     // })
     .setTween(tween_img)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
     // OUR TEAM STUFF - WHO DOES THE STUFF
@@ -482,7 +482,7 @@ $(window).load(function() {
         offset: -150
     })
     .setTween(teamTextTween)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
 
@@ -501,7 +501,7 @@ $(window).load(function() {
         offset: -150
     })
     .setTween(contactTextTween)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
     // build tween
@@ -513,7 +513,7 @@ $(window).load(function() {
         offset: -20
     })
     .setTween(rightTween)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
     // build tween
@@ -525,289 +525,10 @@ $(window).load(function() {
         offset: -20
     })
     .setTween(leftTween)
-    .addIndicators()
-    .addTo(controller);
-
-    // var optimizerScene1 = new ScrollMagic.Scene({
-    //     triggerElement: '#contact',
-    //     duration: 600,
-    //     offset:-20
-    // })
-    // .on('leave', function(e) {
-    //     $('#contact-box-l').removeClass('animated fadeInLeft')
-    //     $('#contact-box-r').removeClass('animated fadeInRight');
-    // })
-    // .on('start', function(e) {
-    //     $('#contact-box-l').addClass('animated fadeInLeft')
-    //     $('contact-box-r').addClass('animated fadeInRight');
-    // })
-    // .on('leave', function(e) {
-    //     $('#contact-box-r').removeClass('animated fadeInRight');
-    // })
-    // .on('start', function(e) {
-    //     $('#contact-box-r').addClass('animated fadeInRight');
-    // })
     // .addIndicators()
-    // .addTo(controller);
-
-
-
-
-    
-
-
-
-
+    .addTo(controller);
 
 });
 
 
 
-
-
-
-
-
-
-
-
-
-/*========================================
-=            CUSTOM FUNCTIONS            =
-========================================*/
-// function explodeLetter(parentID, letter, fillColor) {
-//     $('#'+parentID+' .word-digital .letter.'+letter).find('rect').each(function() {
-//         $(this).css({
-//             'fill': fillColor,
-//             '-webkit-transform': 'translate3d('+randomIntFromInterval(-69, 69)+'px, '+randomIntFromInterval(-69, 69)+'px, 0)',
-//             '-moz-transform': 'translate3d('+randomIntFromInterval(-69, 69)+'px, '+randomIntFromInterval(-69, 69)+'px, 0)',
-//             '-ms-transform': 'translate3d('+randomIntFromInterval(-69, 69)+'px, '+randomIntFromInterval(-69, 69)+'px, 0)',
-//             '-o-transform': 'translate3d('+randomIntFromInterval(-69, 69)+'px, '+randomIntFromInterval(-69, 69)+'px, 0)',
-//             'transform': 'translate3d('+randomIntFromInterval(-69, 69)+'px, '+randomIntFromInterval(-69, 69)+'px, 0)'
-//         });
-//     });
-// }
-// function implodeLetter(parentID, letter) {
-//     $('#'+parentID+' .word-digital .letter.'+letter).find('rect').css({
-//         'fill': '#fff',
-//         '-webkit-transform': 'translate3d(0, 0, 0)',
-//         '-moz-transform': 'translate3d(0, 0, 0)',
-//         '-ms-transform': 'translate3d(0, 0, 0)',
-//         '-o-transform': 'translate3d(0, 0, 0)',
-//         'transform': 'translate3d(0, 0, 0)'
-//     });
-// }
-// function randomIntFromInterval(min,max) {
-//     return Math.floor(Math.random()*(max-min+1)+min);
-// }
-// function introStuff() {
-//     $('body').addClass('show-background');
-//     setTimeout(function() {
-//         $('body').addClass('show-stars');
-
-//         $('.hover-block.d').trigger("mouseover");
-//         setTimeout(function() {
-//             $('.hover-block.d').trigger("mouseout");
-//         }, 700);
-
-
-//         $('.hover-block.i-1').trigger("mouseover");
-//         setTimeout(function() {
-//             $('.hover-block.i-1').trigger("mouseout");
-//         }, 700);
-
-//         $('.hover-block.g').trigger("mouseover");
-//         setTimeout(function() {
-//             $('.hover-block.g').trigger("mouseout");
-//         }, 700);
-
-
-//         $('.hover-block.i-2').trigger("mouseover");
-//         setTimeout(function() {
-//             $('.hover-block.i-2').trigger("mouseout");
-//         }, 700);
-
-//         $('.hover-block.t').trigger("mouseover");
-//         setTimeout(function() {
-//             $('.hover-block.t').trigger("mouseout");
-//         }, 700);
-
-//         $('.hover-block.a').trigger("mouseover");
-//         setTimeout(function() {
-//             $('.hover-block.a').trigger("mouseout");
-//         }, 700);
-
-//         $('.hover-block.l').trigger("mouseover");
-//         setTimeout(function() {
-//             $('.hover-block.l').trigger("mouseout");
-//         }, 700);
-
-//     }, 500);
-// }
-// function fillTopper() {
-//     $('#topper').height($(window).height());
-// }
-// function isEmailValid(email) {
-//     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     return re.test(email);
-// }
-// function initParticles() {
-//     particlesJS('contact', {
-//         particles: {
-//             color: '#fff',
-//             shape: 'circle',
-//             opacity: 1,
-//             size: 2.5,
-//             size_random: true,
-//             nb: 75,
-//             line_linked: {
-//                 enable_auto: true,
-//                 distance: 250,
-//                 color: '#fff',
-//                 opacity: 0.5,
-//                 width: 1,
-//                 condensed_mode: {
-//                     enable: false,
-//                     rotateX: 600,
-//                     rotateY: 600
-//                 }
-//             },
-//             anim: {
-//                 enable: true,
-//                 speed: 2.5
-//             }
-//         },
-//         interactivity: {
-//             enable: true,
-//             mouse: {
-//                 distance: 250
-//             },
-//             detect_on: 'canvas',
-//             mode: 'grab',
-//             line_linked: {
-//                 opacity: 0.5
-//             },
-//             events: {
-//                 onclick: {
-//                     push_particles: {
-//                         enable: true,
-//                         nb: 4
-//                     }
-//                 }
-//             }
-//         },
-//         retina_detect: true
-//     });
-// }
-// function sexyInputs() {
-
-//     function SVGInput( el, options ) {
-//         this.el = el;
-//         this.inputEl = this.el.querySelector( '.input' );
-//         this.init();
-//     }
-
-//     SVGInput.prototype.init = function() {
-//         this.shapeEl = this.el.querySelector( 'span.morph-shape' );
-
-//         var s = Snap( this.shapeEl.querySelector( 'svg' ) );
-//         this.pathEl = s.select( 'path' );
-//         this.paths = {
-//             reset : this.pathEl.attr( 'd' ),
-//             active : this.shapeEl.getAttribute( 'data-morph-active' )
-//         };
-
-//         this.initEvents();
-//     };
-
-//     SVGInput.prototype.initEvents = function() {
-//         if( this.inputEl.type === 'checkbox' || this.inputEl.type === 'submit' ) {
-//             this.el.addEventListener( 'mousedown', this.down.bind(this) );
-//             this.el.addEventListener( 'touchstart', this.down.bind(this) );
-
-//             this.el.addEventListener( 'mouseup', this.up.bind(this) );
-//             this.el.addEventListener( 'touchend', this.up.bind(this) );
-
-//             this.el.addEventListener( 'mouseout', this.up.bind(this) );
-//         } else {
-//             this.el.addEventListener( 'focus', this.toggle.bind(this), true );
-//             this.el.addEventListener( 'click', this.toggle.bind(this) );
-//         }
-//     };
-
-//     SVGInput.prototype.down = function() {
-//         this.pathEl.stop().animate( { 'path' : this.paths.active }, 100, mina.easein );
-//     };
-
-//     SVGInput.prototype.up = function() {
-//         this.pathEl.stop().animate( { 'path' : this.paths.reset }, 900, mina.elastic );
-//     };
-
-//     SVGInput.prototype.toggle = function() {
-//         var self = this;
-
-//         this.pathEl.stop().animate( { 'path' : this.paths.active }, 150, mina.easein, function() {
-//             self.pathEl.stop().animate( { 'path' : self.paths.reset }, 550, mina.elastic );
-//         } );
-//     };
-
-//     [].slice.call( document.querySelectorAll( '.input-wrap' ) ).forEach( function( el ) {
-//         new SVGInput( el );
-//     } );
-
-// }
-
-
-// Open the console...
-console.log('______________________$$$$$$$$');
-console.log('_______________$$$$$$$________$$$$$$$$$');
-console.log('_____________$$________________________$$$$');
-console.log('____________$$_____________________________$$');
-console.log('___________$__________________________________$$');
-console.log('___________$$___________________________________$$');
-console.log('__________$$__$$______________________$$__________$$');
-console.log('________$$__$$___$$$$_________$$$$____$$__________$$$$');
-console.log('______$$___$$__$$$$__$$_____$$$$__$$_$$_____________$$$');
-console.log('______$$___$$____$$$$_________$$$$___$$_______________$$');
-console.log('______$$___$$________________________$$_______________$$');
-console.log('______$$____$$_______________________$$_____________$$');
-console.log('________$$__$$____$$$$$$_____________$$___________$$$');
-console.log('________$$__$$__$$______$$___________$$_________$$');
-console.log('________$$__$$__$$______$$___________$$_______$$');
-console.log('__________$$$$____$$$$$$_____________$$$$____$$$$');
-console.log('__________$$$$_____________________$$__$$____$$$');
-console.log('___________$$_$$$$$$$$$$$$_____$$$$______$$$$_$$');
-console.log('_____________$$___$$______$$$$$_______________$$');
-console.log('_____________$$_____$$$$$$$____________________$$');
-console.log('_____________$$________________________________$$');
-console.log('____________$$_________________________________$$');
-console.log('____________$$_________________________________$$');
-console.log('____________$$___________________________________$');
-console.log('____________$$___________________________________$$');
-console.log('__________$$_________________________$$___________$');
-console.log('__________$$__________$$___________$$_____________$$');
-console.log('________$$__$$________$$_________$$_______________$$');
-console.log('______$$____$$__________$$_______$$_______________$$');
-console.log('______$$____$$____________$$___$$_________________$$');
-console.log('____$$______$$_____________$$_$$_______$$_________$$');
-console.log('____$$______$$________$$____$$$________$$_________$$');
-console.log('____$$______$$________$$____$$$_______$$__________$$');
-console.log('____$$______$$________$$_______________$$__________$$');
-console.log('____$$______$$________$$_______________$$____________$');
-console.log('_$$$$_______$$________$$_______________$$____________$$');
-console.log('$___$$______$$________$$$$___________$$$$____________$$');
-console.log('$___$$______$$________$$__$$_______$$__$$____________$$');
-console.log('_$$$$$______$$________$$____$$___$$_____$$___________$$');
-console.log('____$$______$$________$$______$$_______$$___________$$');
-console.log('____$$______$$________$$_____$$________$$___________$$');
-console.log('__$$________$$________$$$$$$$$___$$$$$$__$$_________$$');
-console.log('__$$________$$________$$______$$$______$$$$_________$$');
-console.log('$$________$$__________$$_________$$$$$$__$$__________$');
-console.log('$$______$$__________$$$$$$$$$$$$$$$______$$__________$');
-console.log('$$_$$_$$$__________$$_____________$$$$$$$__$$_________$');
-console.log('_$$$$$$$___________$$______________________$$________$$');
-console.log('_____$$__$$__$$__$$_$______________________$$__________$$');
-console.log('______$$$$__$___$__$$______________________$$____________$');
-console.log('_______$$___$___$__$________________________$$_$__$$__$$__$');
-console.log('_________$$$$$$$$$$__________________________$$_$_$$$$$$$$');
-console.log('You found Baxter!!!');
