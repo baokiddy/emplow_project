@@ -367,6 +367,13 @@ li {
     border: 0.5px solid #a9a9a9;
     border-radius:24px;
     }
+.input-form:focus, .input-form:active {
+  border-color: rgba(47,67,148,0.4);
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(47,67,148,0.4);
+  -moz-box-shadow: 0 0 0 0.2rem rgba(47,67,148,0.4);
+  box-shadow: 0 0 0 0.2rem rgba(47,67,148,0.4);
+}
   @media (min-width: 0em) {
     .input-form {
       font-size: 1rem;
@@ -389,9 +396,6 @@ li {
       width: 60%;
     }}
   
-  .input-form input:focus, .input-form input:active {
-    outline: rgba(47,67,148,1);
-  }
   .input-form input {
     width: 70%;
     float: left;
@@ -405,6 +409,11 @@ li {
   .form-control:focus, .form-control:active {
     border-color: rgba(47,67,148,0.4);
     box-shadow: 0 0 0 0.2rem rgba(47,67,148,0.4);
+  }
+
+  .sub-form:focus, .sub-form:active {
+    border-color: rgba(47,67,148,0.4);
+    box-shadow: none;
   }
 
   @media (min-width: 0em) {
@@ -465,9 +474,10 @@ li {
 }
 @media (min-width: 0em) {
   .overlay-text {
+    position: absolute;
     width:100%; /*important*/
-    bottom:111vw; /*important*/
-    left:40vw;}
+    bottom:8%; /*important*/
+    left:27%;}
   .img-offset-2 {
     width:90%;
     bottom:10vw; /*important*/
@@ -486,32 +496,12 @@ li {
     font-size: 2.625rem;
 }}
 
-@media (min-width: 28.125em) {
+@media (min-width: 23.4375em) {
   .overlay-text {
+    position: absolute;
     width:100%; /*important*/
-    bottom:87vw; /*important*/
-    left:40vw;}
-  .img-offset {
-    width:90%;
-    float:right;
-    bottom:11vw; /*important*/
-    overflow:hidden;}
-  .img-offset-2 {
-    width:90%;
-    bottom:21vw; /*important*/
-    overflow:hidden;
-    left:-18vw;}
-  .title_1 {
-    margin-left: 5%;}
-  .title_font {
-    font-size: 3rem;
-}}
-  
-@media (min-width: 36em) {
-  .overlay-text {
-    width:100%; /*important*/
-    bottom:45vw; /*important*/
-    left:40vw;}
+    bottom:-0.5%; /*important*/
+    left:24%;}
   .img-offset {
     width:90%;
     float:right;
@@ -526,11 +516,35 @@ li {
     font-size: 3rem;
 }}
 
+@media (min-width: 26.5625em) {
+  .overlay-text {
+    position: absolute;
+    width:100%; /*important*/
+    bottom:-7%; /*important*/
+    left:25%;}
+  .img-offset {
+    width:90%;
+    float:right;
+    bottom:8vw; /*important*/
+    left:-10%;
+    overflow:hidden;}
+  .img-offset-2 {
+    width:90%;
+    bottom:15vw; /*important*/
+    overflow:hidden;
+    left:-20%;}
+  .title_1 {
+    margin-left: 5%;}
+  .title_font {
+    font-size: 3rem;
+}}
+
 @media (min-width: 48em) {
   .overlay-text {
+    position:absolute;
     width:90%; /*important*/
-    bottom:37vw; /*important*/
-    left:38vw;}
+    bottom:-15%; /*important*/
+    left:30%;}
   .img-offset {
     width:70%;
     float:right;
@@ -548,9 +562,10 @@ li {
 
 @media (min-width: 62em) {
   .overlay-text {
-    width:70%; /*important*/
-    bottom:42vw; /*important*/
-    left:20vw;
+    position: absolute;
+    width:60%; /*important*/
+    bottom:-5%; /*important*/
+    left:35%;
     overflow:hidden;}
   .img-offset {
     width:70%;
@@ -569,9 +584,10 @@ li {
 
 @media (min-width: 75em) {
   .overlay-text {
-  width:70%; /*important*/
-  bottom:25vw; /*important*/
-  left:15vw;
+  position: absolute;
+  width:50%; /*important*/
+  top:25%; /*important*/
+  left:35%;
   overflow: hidden;}
   .img-offset {
     position:relative;
@@ -622,7 +638,7 @@ li {
 .offset:before { 
   display: block; 
   content: " "; 
-    height: 200px;      /* Give height of your fixed element */
+    height: 250px;      /* Give height of your fixed element */
          margin-top: -150px; /* Give negative margin of your fixed element */   
          visibility: hidden; 
  }
