@@ -476,7 +476,7 @@ li {
   .overlay-text {
     position: absolute;
     width:100%; /*important*/
-    bottom:8%; /*important*/
+    bottom:-8%; /*important*/
     left:27%;}
   .img-offset-2 {
     width:90%;
@@ -496,11 +496,40 @@ li {
     font-size: 2.625rem;
 }}
 
-@media (min-width: 23.4375em) {
+/* Galaxy S5 */
+@media only screen
+  and (width: 360px)
+  and (height:640px)
+  and (orientation:portrait)
+{
   .overlay-text {
     position: absolute;
     width:100%; /*important*/
-    bottom:-0.5%; /*important*/
+    bottom:10%; /*important*/
+    left:29%;}
+  .img-offset-2 {
+    width:90%;
+    bottom:10vw; /*important*/
+    overflow:hidden;
+    left:-15vw;}
+  .img-offset {
+    width:100%;
+    float:right;
+    bottom:20vw; /*important*/
+    overflow:hidden;
+    left:1vw;
+  }
+  .title_1 {
+    margin-left: 5%;}
+  .title_font {
+    font-size: 2.625rem;
+}}
+
+@media (min-width: 375px) {
+  .overlay-text {
+    position: absolute;
+    width:100%; /*important*/
+    bottom:2%; /*important*/
     left:24%;}
   .img-offset {
     width:90%;
@@ -516,12 +545,112 @@ li {
     font-size: 3rem;
 }}
 
-@media (min-width: 26.5625em) {
+/* iPhone X */
+@media only screen
+and (width: 375px) 
+and (height:812px)
+and (orientation:portrait)
+{
   .overlay-text {
     position: absolute;
     width:100%; /*important*/
-    bottom:-7%; /*important*/
-    left:25%;}
+    bottom:0%; /*important*/
+    left:24%;}
+  .img-offset {
+    width:90%;
+    float:right;
+    bottom:11vw; /*important*/
+    overflow:hidden;}
+  .img-offset-2 {
+    width:90%;
+    bottom:10vw; /*important*/
+    overflow:hidden;
+    left:-13vw;}
+  .title_font {
+    font-size: 3rem;
+}}
+
+/* iPhone 6/7/8 */
+@media only screen
+and (width: 375px) 
+and (height:667px)
+and (orientation:portrait)
+{
+  .overlay-text {
+    position: absolute;
+    width:100%; /*important*/
+    bottom:-3%; /*important*/
+    left:24%;}
+  .img-offset {
+    width:90%;
+    float:right;
+    bottom:11vw; /*important*/
+    overflow:hidden;}
+  .img-offset-2 {
+    width:90%;
+    bottom:10vw; /*important*/
+    overflow:hidden;
+    left:-13vw;}
+  .title_font {
+    font-size: 3rem;
+}}
+
+/* Pixel 2 */
+@media only screen
+  and (width:411px)
+  and (height:823px)
+  and (orientation:portrait)
+  {
+  .overlay-text {
+    position: absolute;
+    width:100%; /*important*/
+    bottom:-2%; /*important*/
+    left:24%;}
+  .img-offset {
+    width:90%;
+    float:right;
+    bottom:11vw; /*important*/
+    overflow:hidden;}
+  .img-offset-2 {
+    width:90%;
+    bottom:10vw; /*important*/
+    overflow:hidden;
+    left:-13vw;}
+  .title_font {
+    font-size: 3rem;
+}}
+
+
+/* iPhone 6/7/8 Plus*/
+@media only screen
+and (width: 414px)
+and (orientation:portrait)
+{
+  .overlay-text {
+    position: absolute;
+    width:100%; /*important*/
+    bottom:-14%; /*important*/
+    left:24%;}
+  .img-offset {
+    width:90%;
+    float:right;
+    bottom:11vw; /*important*/
+    overflow:hidden;}
+  .img-offset-2 {
+    width:90%;
+    bottom:10vw; /*important*/
+    overflow:hidden;
+    left:-13vw;}
+  .title_font {
+    font-size: 3rem;
+}}
+
+@media (min-width: 425px) {
+  .overlay-text {
+    position: absolute;
+    width:90%; /*important*/
+    bottom:1%; /*important*/
+    left:37%;}
   .img-offset {
     width:90%;
     float:right;
@@ -539,11 +668,12 @@ li {
     font-size: 3rem;
 }}
 
-@media (min-width: 48em) {
+@media (min-width: 768px) 
+{
   .overlay-text {
     position:absolute;
     width:90%; /*important*/
-    bottom:-15%; /*important*/
+    bottom:-20%; /*important*/
     left:30%;}
   .img-offset {
     width:70%;
@@ -560,12 +690,38 @@ li {
     font-size: 3.5rem;
 }}
 
-@media (min-width: 62em) {
+/* iPad Portrait */
+@media only screen
+  and (width: 768px) 
+  and (orientation: portrait)
+{
+  .overlay-text {
+    position:absolute;
+    width:90%; /*important*/
+    bottom:-5%; /*important*/
+    left:30%;}
+  .img-offset {
+    width:70%;
+    float:right;
+    bottom:11vw; /*important*/
+    left:-15vw;
+    overflow:hidden;}
+  .img-offset-2 {
+    width:80%;
+    bottom:10vw; /*important*/
+    overflow:hidden;
+    left:-10vw;}
+  .title_font {
+    font-size: 5.5rem;
+}}
+
+@media (min-width: 992px) 
+{
   .overlay-text {
     position: absolute;
     width:60%; /*important*/
-    bottom:-5%; /*important*/
-    left:35%;
+    bottom:-13%; /*important*/
+    left:33%;
     overflow:hidden;}
   .img-offset {
     width:70%;
@@ -582,11 +738,37 @@ li {
     font-size: 4.5rem;
   }}
 
-@media (min-width: 75em) {
+  /* iPad Pro Portrait */
+  @media only screen 
+  and (width: 1024px)
+  and (orientation:portrait)
+{
+  .overlay-text {
+    position: absolute;
+    width:100%; /*important*/
+    bottom:5%; /*important*/
+    left:27%;
+    overflow:hidden;}
+  .img-offset {
+    width:70%;
+    float:right;
+    bottom:7vw; /*important*/
+    left:-5vw; 
+    overflow:hidden;}
+  .img-offset-2 {
+    width:100%;
+    bottom:8vw; /*important */
+    overflow:hidden;
+    left:-9vw; }
+  .title_font {
+    font-size: 7.5rem;
+  }}
+
+@media (min-width: 1200px) {
   .overlay-text {
   position: absolute;
   width:50%; /*important*/
-  top:25%; /*important*/
+  top:24%; /*important*/
   left:35%;
   overflow: hidden;}
   .img-offset {
