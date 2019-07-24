@@ -86,7 +86,7 @@
               </a>
             </li>
 						<li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="" data-toggle="modal" data-target=".login">
                   <svg class="log_btn">
                     <g>
                       <rect id="log_btn" rx="24" ry="28" x="0" y="10" width="90" height="40"></rect>
@@ -118,10 +118,10 @@
           <div class= "row text-align-left col-md-8 col-10">
             <h1 class= "title_font animated fadeIn slow delay-half" style = "text-align:left">Most Efficient
                 Hiring Experience Ever</h1> <br>
-            <form action="/sub-button" method="POST" id="sub_form">
-              <div class="input-group input-form animated fadeIn slow delay-threeq"> 
-                <input type="email" class="form-control form-control-lg sub_form sub-form" placeholder="your@email.com" id="form3">
-                <button type="button" class="sub_btn">Register interest</button>
+            <form action="/register" method="POST" id="sub_form">
+              <div class="input-group input-form animated fadeIn slow delay-threeq" id="enlarge"> 
+                <input type="email" class="form-control form-control-lg sub_form sub-form" placeholder="your@email.com" id="email">
+                <button type="button" class="sub_btn" id="sub-btn">Register interest</button>
               </div>
             </form> 
           </div>
@@ -170,11 +170,11 @@
               </div>
         <div class="row justify-content-left">
           <div class="col-lg-6 p-1 col-md-6 col-sm-11 col-10 mx-auto">
-            <div class=" d-flex h-100">
-                <div class="pt-4 col-3 col-xs-6 align-items-center"> 
-                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto" src="select-candidates.jpg" width="100%">
+            <div class="h-100 s-card">
+                <div class="pt-4 col-md-3 col-sm-2 align-items-center"> 
+                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto icon-img" src="select-candidates.jpg">
                 </div>
-              <div class="card-body col-9 col-xs-6 text-align-left"> 
+              <div class="card-body col-md-9 col-sm-12 text-align-left"> 
                 <h3><b>Select Your Top Candidates</b></h3>
                 <p class="mb-0">With Emplow, it just takes one glance
                     to know whether a candidate meets
@@ -186,13 +186,13 @@
             </div>
           </div>
           <div class="col-lg-6 p-1 col-md-6 col-sm-11 col-10 mx-auto">
-            <div class="d-flex h-100">
-                <div class="pt-4 col-3 align-items-center"> 
-                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto" src="know-candidates-3.jpg" width="100%">
+            <div class="h-100 s-card">
+                <div class="pt-4 col-md-3 col-sm-2 align-items-center"> 
+                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto icon-img" src="know-candidates-3.jpg">
                 </div>
-              <div class="card-body col-9 text-align-left"> 
+              <div class="card-body col-md-9 col-sm-12 text-align-left"> 
                 <h3><b>Know Your Candidate</b></h3>
-                <p class="mb-0">The job market is 90% candidatedriven. Thus, it is more crucial than
+                <p class="mb-0">The job market is 90% candidate-driven. Thus, it is more crucial than
                     ever to understand and relate to your
                     candidate. Emplow shows you, how
                     you can build up a fantastic
@@ -202,11 +202,11 @@
             </div>
           </div>
           <div class="col-lg-6 p-1 col-md-6 col-sm-11 col-10 mx-auto">
-            <div class="d-flex h-100">
-                <div class="pt-4 col-3 align-items-center"> 
-                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto" src="time-money-3.jpg" width="100%">
+            <div class="h-100 s-card">
+                <div class="pt-4 col-md-3 col-sm-2 align-items-center"> 
+                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto icon-img" src="time-money-3.jpg">
                 </div>
-              <div class="card-body col-9 text-align-left"> 
+              <div class="card-body col-md-9 col-sm-12 text-align-left"> 
                 <h3><b>Save time because time is money</b></h3>
                 <p class="mb-0">Long hiring processes are one of the
                     biggest frustrations and inefficiencies.
@@ -219,11 +219,11 @@
             </div>
           </div>
           <div class="col-lg-6 p-1 col-md-6 col-sm-11 col-10 mx-auto">
-            <div class="d-flex h-100">
-                <div class="pt-4 col-3 align-items-center"> 
-                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto" src="ai-2.jpg" width="100%">
+            <div class="h-100 s-card">
+                <div class="pt-4 col-md-3 col-sm-2 align-items-center"> 
+                    <img id ="bounce" class="img-fluid d-block mb-3 mx-auto icon-img" src="ai-2.jpg">
                 </div>
-              <div class="card-body col-9 text-align-left"> 
+              <div class="card-body col-md-9 col-sm-12 text-align-left"> 
                 <h3><b>Powered by AI</b></h3>
                 <p class="mb-0">Emplow is a software that uses AI to
                     understand a candidate’s personality
@@ -290,10 +290,10 @@
           </div>
           <div class="col-md-6 p-3" id="contact-box-r">
             <form action="/email-button" method="POST" id="submittingForm">
-              <div class="form-group msg_box-shadow "> <input type="text" class="form-control" id="form38" placeholder="Name*"> </div>
-              <div class="form-group msg_box-shadow"> <input type="email" class="form-control" id="form39" placeholder="Email*"> </div>
-              <div class="form-group msg_box-shadow animated"> <textarea class="form-control" id="form43" rows="3" placeholder="Your message"></textarea> </div> 
-              <svg class="send_btn" onclick="submitForm();">
+              <div class="form-group msg_box-shadow "> <input type="text" class="form-control" id="text-2" placeholder="Name*"> </div>
+              <div class="form-group msg_box-shadow"> <input type="email" class="form-control" id="email-2" placeholder="Email*"> </div>
+              <div class="form-group msg_box-shadow animated"> <textarea class="form-control" id="content-2" rows="3" placeholder="Your message"></textarea> </div> 
+              <svg class="send_btn" id="send-btn">
                 <g>
                   <rect id="log_btn" rx="20" ry="28" x="0" y="10" width="150" height="40"></rect>
                   <text x="17" y="35" fill = "#fdfbfb" class="p">Send Message</text>
@@ -328,6 +328,34 @@
         </div>
       </div>
     <!-- Footer end -->
+    <!-- Modal pop-up for login start -->
+    <div class="modal fade login">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content log-border">
+          <div class="modal-body bg-light">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+              <br>
+            <div class="row justify-content-center">
+              <div class="col-md-3 px-3">
+                  <img class="img-fluid d-block mx-auto rounded-circle animated fadeIn slow" src="emplow-graphic-logo.png"> </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8 p-2">
+                <p class="">The team is working on creating an awesome hiring workflow. <br>
+                <br>If you're interested in being a part of this hiring revolution, please submit your email to receive updates!</p>
+                <form action="/register" method="POST" id="sub_form">
+                  <div class="input-group input-form w-100" id="mod-btn"> 
+                    <input type="email" class="form-control form-control-lg sub_form sub-form" placeholder="your@email.com" id="email-3">
+                    <button type="button" class="sub_btn" id="msub-btn">Register interest</button>
+                  </div>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal pop-up end -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -336,6 +364,7 @@
     <!-- Script: Smooth scrolling between anchors in the same page -->
     <script type="text/javascript" src="smooth-scroll.js"></script>
     <script type="text/javascript" src="animation.js"></script>
+    <script type="text/javascript" src="submit.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>

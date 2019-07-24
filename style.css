@@ -326,6 +326,10 @@ li {
     font-weight:200;
     color: rgba(47,67,148,1);
     }
+.sub_btn:focus, .sub_btn:active {
+  outline: none;
+  box-shadow:none;
+}
     @media (min-width: 0em) {
     .sub_btn {
         font-size: 1rem;
@@ -1126,6 +1130,47 @@ and (orientation:portrait)
 }
 
 /* -------------------------------
+        Service Page Settings
+------------------------------- */
+
+@media (min-width: 0em) {
+  .icon-img {
+    width:45%;
+  }}
+
+@media (min-width: 375px) {
+  .icon-img {
+    width:45%;
+  }}
+
+@media (min-width: 425px) {
+  .icon-img {
+    width:50%;
+  }}
+
+@media (min-width: 768px) {
+  .s-card {
+  display:flex;}
+  .icon-img {
+    width:100%;
+  }}
+
+@media (min-width: 992px) { 
+  .s-card {
+    display:flex;}
+  .icon-img {
+    width:100%;
+  }}
+
+@media (min-width: 1200px) {
+  .s-card {
+    display:flex;}
+  .icon-img {
+    width:100%;
+  }}
+
+
+/* -------------------------------
         Testimonial Settings
 ------------------------------- */
 
@@ -1135,4 +1180,35 @@ and (orientation:portrait)
 
 .delay-half {
   animation-delay: 0.5s;
+}
+
+/* -------------------------------
+        Login & Modal Settings
+------------------------------- */
+
+.log-border {
+  border:5px solid  rgba(47,67,148,0.6);
+}
+
+.transition {
+  -webkit-transform: scale(1.25); 
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  transform: scale(1.25);
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.glow {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(47,67,148,0.4);
+  -moz-box-shadow: 0 0 0 0.2rem rgba(47,67,148,0.4);
+  -o-box-shadow:0 0 0 0.2rem rgba(47,67,148,0.4);
+  box-shadow: 0 0 0 0.2rem rgba(47,67,148,0.4);
+}
+
+#enlarge {
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
 }
